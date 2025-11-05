@@ -1,0 +1,30 @@
+{
+  "name": "vendor-announcement-detector",
+  "version": "1.0.0",
+  "description": "Automated vendor announcement detection system using Cloudflare Workers and LLM classification",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "npx wrangler dev",
+    "deploy": "npx wrangler deploy", 
+    "test": "npx ts-node test/test-runner.ts",
+    "build": "npx tsc"
+  },
+  "keywords": [
+    "slack",
+    "vendor",
+    "announcements",
+    "cloudflare",
+    "workers",
+    "llm",
+    "groq"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20251014.0",
+    "@types/node": "^20.19.24",
+    "dotenv": "^16.6.1",
+    "typescript": "^5.9.3",
+    "wrangler": "^4.45.4"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "event_callback",
+  "event": {
+    "type": "message",
+    "text": "GitHub status update: We are currently experiencing elevated error rates for Git operations. Engineers are investigating the issue. Updates will be posted here as we learn more.",
+    "channel": "C1234567890", 
+    "user": "U3456789012",
+    "ts": "1699123700.234567"
+  },
+  "team_id": "T01234567"
+}

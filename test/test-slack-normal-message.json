@@ -1,0 +1,11 @@
+{
+  "type": "event_callback",
+  "event": {
+    "type": "message",
+    "text": "Hey everyone! Just wanted to share that our Q4 planning meeting has been moved to next Friday. Please update your calendars accordingly. Thanks!",
+    "channel": "C1234567890",
+    "user": "U1234567890",
+    "ts": "1699123456.789012"
+  },
+  "team_id": "T01234567"
+}

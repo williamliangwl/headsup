@@ -1,0 +1,11 @@
+{
+  "type": "event_callback",
+  "event": {
+    "type": "message",
+    "text": "🔥 BREAKING: Stripe API v2024-04-10 will be deprecated on January 31, 2025. All integrations must migrate to v2024-10-28 before this date. Key changes include updated payment flow and webhook structure. Migration guide: https://stripe.com/docs/upgrades",
+    "channel": "C1234567890",
+    "user": "U2345678901",
+    "ts": "1699123600.123456"
+  },
+  "team_id": "T01234567"
+}

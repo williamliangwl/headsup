@@ -1,0 +1,31 @@
+name = "vendor-announcement-detector"
+main = "src/index.ts"
+compatibility_date = "2024-11-04"
+
+# Production environment (default)
+[vars]
+# Non-sensitive configuration variables
+MONITORED_CHANNELS = "new-channel"
+SLACK_WORKSPACE_DOMAIN = "breakout"
+
+# Development environment
+[env.dev.vars]
+MONITORED_CHANNELS = "test-channel"
+SLACK_WORKSPACE_DOMAIN = "breakout"
+
+# Staging environment  
+[env.staging.vars]
+MONITORED_CHANNELS = "staging-channel"
+SLACK_WORKSPACE_DOMAIN = "breakout"
+
+# Secrets (use: wrangler secret put KEY)
+# GROQ_API_KEY
+# SLACK_BOT_TOKEN  
+# SLACK_SIGNING_SECRET
+
+[observability]
+[observability.logs]
+enabled = true
+head_sampling_rate = 1
+invocation_logs = true
+persist = true

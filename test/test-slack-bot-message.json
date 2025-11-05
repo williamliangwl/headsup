@@ -1,0 +1,17 @@
+{
+  "type": "event_callback",
+  "event": {
+    "type": "message",
+    "text": "🚨 *VENDOR ANNOUNCEMENT DETECTED* <@williamliang82>\n\n*Type:* maintenance\n*Vendor:* AWS\n*Impact:* high\n\n*Summary:*\nScheduled RDS maintenance with potential downtime\n\n---\n_Detected by automated monitoring_",
+    "channel": "C1234567890",
+    "user": "U9876543210",
+    "ts": "1699123567.890123",
+    "bot_id": "B09QQJE8N3B",
+    "bot_profile": {
+      "id": "B09QQJE8N3B",
+      "name": "Breakout n8n",
+      "app_id": "A09876543210"
+    }
+  },
+  "team_id": "T01234567"
+}
