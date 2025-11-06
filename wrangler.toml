@@ -2,21 +2,28 @@ name = "vendor-announcement-detector"
 main = "src/index.ts"
 compatibility_date = "2024-11-04"
 
-# Production environment (default)
-[vars]
-# Non-sensitive configuration variables
-MONITORED_CHANNELS = "new-channel"
-SLACK_WORKSPACE_DOMAIN = "breakout"
-
-# Development environment
-[env.dev.vars]
-MONITORED_CHANNELS = "test-channel"
-SLACK_WORKSPACE_DOMAIN = "breakout"
-
-# Staging environment  
-[env.staging.vars]
-MONITORED_CHANNELS = "staging-channel"
-SLACK_WORKSPACE_DOMAIN = "breakout"
+# Environment Variables - Managed via Cloudflare Dashboard
+# =========================================================
+# These variables are configured directly in the Cloudflare Dashboard
+# to allow runtime changes without requiring code deployments.
+# 
+# To update these values:
+# 1. Go to Cloudflare Dashboard > Workers & Pages > vendor-announcement-detector
+# 2. Navigate to Settings > Environment Variables
+# 3. Add/modify the following variables:
+#
+# MONITORED_CHANNELS = "new-channel,aws-status"  # Comma-separated channel names (no # prefix)
+# SLACK_WORKSPACE_DOMAIN = "breakout"            # Slack workspace subdomain
+#
+# Benefits of Dashboard management:
+# - Changes take effect immediately without deployment
+# - Production settings preserved across code deployments  
+# - Multiple team members can adjust monitoring without code access
+# - No risk of accidentally overwriting production configuration
+#
+# [vars]
+# MONITORED_CHANNELS = "new-channel"      # ⚠️ COMMENTED OUT - Managed in Dashboard
+# SLACK_WORKSPACE_DOMAIN = "breakout"    # ⚠️ COMMENTED OUT - Managed in Dashboard
 
 # Secrets (use: wrangler secret put KEY)
 # GROQ_API_KEY
